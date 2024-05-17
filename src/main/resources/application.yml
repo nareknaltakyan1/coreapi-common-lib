@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: coreapi-common-lib
+
+server:
+  port: 8083
+  servlet:
+    context-path: /auth
