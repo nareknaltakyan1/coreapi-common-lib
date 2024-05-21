@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.nnaltakyan.api</groupId>
 	<artifactId>coreapi-common-lib</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>coreapi-common-lib</name>
 	<description>Core API library with common classes</description>
 	<properties>
@@ -81,6 +81,17 @@
 							<version>4.7.1</version>
 						</eclipse>
 					</java>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<addDefaultImplementationEntries>false</addDefaultImplementationEntries>
+						</manifest>
+					</archive>
 				</configuration>
 			</plugin>
 		</plugins>
