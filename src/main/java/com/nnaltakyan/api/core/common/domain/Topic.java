@@ -1,11 +1,11 @@
 package com.nnaltakyan.api.core.common.domain;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 @Getter
-@AllArgsConstructor
+@RequiredArgsConstructor
 public enum Topic {
     EMAIL_VERIFICATION("Email verification");
-    private String topicName;
+    private final String name;
 }
