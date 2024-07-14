@@ -8,26 +8,29 @@ import jakarta.persistence.PreUpdate;
 import java.time.Instant;
 
 @MappedSuperclass
-public abstract class BaseEntity {
+public abstract class BaseEntity
+{
 
-    @Column(name = "created", nullable = false, updatable = false)
-    private Instant created;
+	@Column(name = "created", nullable = false, updatable = false)
+	private Instant created;
 
-    @Column(name = "updated", nullable = false)
-    private Instant updated;
+	@Column(name = "updated", nullable = false)
+	private Instant updated;
 
-    @Column(name = "deleted")
-    private Instant deleted;
+	@Column(name = "deleted")
+	private Instant deleted;
 
-    @PrePersist
-    protected void onCreate() {
-        Instant now = Instant.now();
-        this.created = now;
-        this.updated = now;
-    }
+	@PrePersist
+	protected void onCreate()
+	{
+		Instant now = Instant.now();
+		this.created = now;
+		this.updated = now;
+	}
 
-    @PreUpdate
-    protected void onUpdate() {
-        this.updated = Instant.now();
-    }
+	@PreUpdate
+	protected void onUpdate()
+	{
+		this.updated = Instant.now();
+	}
 }

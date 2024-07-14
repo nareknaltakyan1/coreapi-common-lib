@@ -5,7 +5,8 @@ import lombok.RequiredArgsConstructor;
 
 @Getter
 @RequiredArgsConstructor
-public enum Topic {
-    EMAIL_VERIFICATION("Email verification");
-    private final String name;
+public enum Topic
+{
+	EMAIL_VERIFICATION("Email verification");
+	private final String name;
 }

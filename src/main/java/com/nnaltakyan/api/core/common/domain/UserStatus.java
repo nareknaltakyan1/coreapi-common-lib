@@ -5,8 +5,8 @@ import lombok.RequiredArgsConstructor;
 
 @Getter
 @RequiredArgsConstructor
-public enum UserStatus {
-    CREATED ("CREATED"),
-    VERIFIED ("VERIFIED");
-    private final String status;
+public enum UserStatus
+{
+	CREATED("CREATED"), VERIFIED("VERIFIED");
+	private final String status;
 }

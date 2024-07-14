@@ -35,11 +35,10 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-    <dependency>
+    	<dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-    </dependencies>
 
 		<!-- Spring Boot Starter Data JPA -->
 		<dependency>
