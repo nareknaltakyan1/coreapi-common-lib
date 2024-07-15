@@ -1,4 +1,4 @@
-package com.nnaltakyan.api.core.common.domain;
+package com.nnaltakyan.api.core.common.error;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public enum ErrorMessage
 {
-	VERIFICATION_NOT_FOUND("Verification record not found."), USER_NOT_FOUND("User record not found.");
+	VERIFICATION_FAILED("Verification record not found."),
+	USER_NOT_FOUND("User record not found.");
 	private final String message;
 }
