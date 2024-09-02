@@ -7,7 +7,6 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public enum ErrorMessage
 {
-	VERIFICATION_FAILED("Verification record not found."),
-	USER_NOT_FOUND("User record not found.");
+	VERIFICATION_FAILED("Verification record not found."), USER_NOT_FOUND("User record not found.");
 	private final String message;
 }

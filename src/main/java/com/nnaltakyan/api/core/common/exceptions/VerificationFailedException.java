@@ -5,6 +5,7 @@ import lombok.Data;
 
 @AllArgsConstructor
 @Data
-public class VerificationFailedException extends RuntimeException{
-    private String message;
+public class VerificationFailedException extends RuntimeException
+{
+	private String message;
 }
